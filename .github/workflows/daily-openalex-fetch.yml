@@ -31,15 +31,25 @@ jobs:
           ls -la
           ls -la scripts || true
           python -c "import os;print('PY:',os.environ.get('PYTHONPATH',''))"
-      - name: Run stable OpenAlex fetch
+      - name: Run stable OpenAlex fetch script
         env:
+
           PYTHONPATH: ${{ github.workspace }}:${{ github.workspace }}/src:${{ github.workspace }}/src/config
         run: |
-          python src/api/openalex_client.py
-      - name: Commit and push data updates
+          python scripts/fetch_openalex.py
+      - name: Commit and push cache JSON updates
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add data/*.json || true
-          git commit -m "chore(ci): daily OpenAlex data refresh" || echo "No changes to commit"
+          git add cache/*.json || true
+          git commit -m "chore(ci): daily OpenAlex cache JSON refresh" || echo "No changes to commit"
           git push
+      - name: (Optional) Publish cache to gh-pages
+        run: |
+          git fetch origin gh-pages || true
+          git checkout gh-pages || git checkout -b gh-pages
+          git checkout main -- cache || true
+          git add cache || true
+          git commit -m "chore(ci): publish cache JSON to gh-pages" || echo "No changes to commit"
+          git push origin gh-pages
+          git checkout main
