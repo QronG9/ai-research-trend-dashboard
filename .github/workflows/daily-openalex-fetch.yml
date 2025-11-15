@@ -26,9 +26,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Run stable OpenAlex fetch script
-        working-directory: scripts
         run: |
-          python fetch_openalex.py
+          python scripts/fetch_openalex.py
       - name: Commit and push data updates
         run: |
           git config user.name "github-actions"
