@@ -33,7 +33,7 @@ jobs:
           python -c "import os;print('PY:',os.environ.get('PYTHONPATH',''))"
       - name: Run stable OpenAlex fetch script
         env:
-          PYTHONPATH: ${{ github.workspace }}:${{ github.workspace }}/src
+          PYTHONPATH: ${{ github.workspace }}:${{ github.workspace }}/src:${{ github.workspace }}/src/config
         run: |
           python scripts/fetch_openalex.py
       - name: Commit and push data updates
