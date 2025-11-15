@@ -1,0 +1,7 @@
+requests
+pandas
+matplotlib
+seaborn
+jupyter
+fastapi
+uvicorn
