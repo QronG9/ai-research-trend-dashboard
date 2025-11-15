@@ -41,7 +41,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add cache/*.json || true
+          git add -f cache/*.json || true
           git commit -m "chore(ci): daily OpenAlex cache JSON refresh" || echo "No changes to commit"
           git push
       - name: (Optional) Publish cache to gh-pages
