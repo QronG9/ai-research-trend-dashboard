@@ -13,6 +13,10 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Show working tree (debug)
+        run: |
+          pwd
+          ls -la
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -22,8 +26,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Run stable OpenAlex fetch script
+        working-directory: scripts
         run: |
-          python scripts/fetch_openalex.py
+          python fetch_openalex.py
       - name: Commit and push data updates
         run: |
           git config user.name "github-actions"
