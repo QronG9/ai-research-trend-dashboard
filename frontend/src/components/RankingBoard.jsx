@@ -1,30 +1,43 @@
 import React, { useEffect, useState } from 'react'
 import ReactECharts from 'echarts-for-react'
 
-export default function RankingBoard({ apiBase, latestYear }) {
+export default function RankingBoard() {
   const [items, setItems] = useState([])
-  const DEFAULT_YEAR = 2025
-  const [year, setYear] = useState(DEFAULT_YEAR)
+  const [year, setYear] = useState(null)
+  const [years, setYears] = useState([])
 
-  useEffect(() => {
-    if (latestYear && latestYear > DEFAULT_YEAR) {
-      setYear(latestYear)
-    } else {
-      setYear(DEFAULT_YEAR)
-    }
-  }, [latestYear])
+  const RANK_URL = "https://qrong9.github.io/ai-research-trend-dashboard/data/ai_rankings.json"
 
   useEffect(() => {
     let ignore = false
-    async function fetchData() {
-      if (!year) return
-      const res = await fetch(`${apiBase}/api/rankings/${year}`)
+    async function fetchAll() {
+      const res = await fetch(RANK_URL)
       const data = await res.json()
-      if (!ignore) setItems(data || [])
+      const ys = (data?.years || []).map(Number).sort((a,b)=>a-b)
+      const latest = ys.length ? ys[ys.length-1] : null
+      if (!ignore) {
+        setYears(ys)
+        setYear(latest)
+        const selected = (data?.rankings || {})[String(latest)] || []
+        setItems(selected)
+      }
     }
-    fetchData()
+    fetchAll()
     return () => { ignore = true }
-  }, [apiBase, year])
+  }, [])
+
+  useEffect(() => {
+    let ignore = false
+    async function loadYear() {
+      if (!year) return
+      const res = await fetch(RANK_URL)
+      const data = await res.json()
+      const selected = (data?.rankings || {})[String(year)] || []
+      if (!ignore) setItems(selected)
+    }
+    loadYear()
+    return () => { ignore = true }
+  }, [year])
 
   const dirs = items.slice(0, 15).map(d => d.direction)
   const counts = items.slice(0, 15).map(d => d.count)
@@ -44,7 +57,11 @@ export default function RankingBoard({ apiBase, latestYear }) {
         <h3 style={{ margin: 0 }}>Rankings</h3>
         <div>
           <label>Year: </label>
-          <input type="number" value={year || ''} onChange={e => setYear(parseInt(e.target.value) || latestYear)} />
+          <select value={year || ''} onChange={e => setYear(parseInt(e.target.value))}>
+            {years.map(y => (
+              <option key={y} value={y}>{y}</option>
+            ))}
+          </select>
         </div>
       </div>
       <ReactECharts option={option} style={{ height: 360 }} />
