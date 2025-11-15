@@ -31,11 +31,11 @@ jobs:
           ls -la
           ls -la scripts || true
           python -c "import os;print('PY:',os.environ.get('PYTHONPATH',''))"
-      - name: Run stable OpenAlex fetch script
+      - name: Run stable OpenAlex fetch
         env:
           PYTHONPATH: ${{ github.workspace }}:${{ github.workspace }}/src:${{ github.workspace }}/src/config
         run: |
-          python scripts/fetch_openalex.py
+          python src/api/openalex_client.py
       - name: Commit and push data updates
         run: |
           git config user.name "github-actions"
