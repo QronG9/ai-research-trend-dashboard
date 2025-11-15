@@ -26,7 +26,14 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+      - name: Verify paths (debug)
+        run: |
+          ls -la
+          ls -la scripts || true
+          python -c "import os;print('PY:',os.environ.get('PYTHONPATH',''))"
       - name: Run stable OpenAlex fetch script
+        env:
+          PYTHONPATH: ${{ github.workspace }}:${{ github.workspace }}/src
         run: |
           python scripts/fetch_openalex.py
       - name: Commit and push data updates
