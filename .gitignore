@@ -1,0 +1,7 @@
+﻿# Global Ignores
+**/node_modules/
+**/dist/
+.env
+.firebaserc
+firebase-debug.log
+"

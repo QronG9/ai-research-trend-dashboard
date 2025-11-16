@@ -1,0 +1,529 @@
+year,direction,count
+2010,Natural Language Processing,499068
+2011,Natural Language Processing,529781
+2012,Natural Language Processing,541910
+2013,Natural Language Processing,560616
+2014,Natural Language Processing,572175
+2015,Natural Language Processing,583628
+2016,Natural Language Processing,588352
+2017,Natural Language Processing,598959
+2018,Natural Language Processing,670970
+2019,Natural Language Processing,739221
+2020,Natural Language Processing,798962
+2021,Natural Language Processing,849120
+2022,Natural Language Processing,835658
+2023,Natural Language Processing,954785
+2024,Natural Language Processing,904484
+2025,Natural Language Processing,564185
+2010,Large Language Models (LLM),1712
+2011,Large Language Models (LLM),1995
+2012,Large Language Models (LLM),2095
+2013,Large Language Models (LLM),2149
+2014,Large Language Models (LLM),2400
+2015,Large Language Models (LLM),2447
+2016,Large Language Models (LLM),2632
+2017,Large Language Models (LLM),2787
+2018,Large Language Models (LLM),3269
+2019,Large Language Models (LLM),4134
+2020,Large Language Models (LLM),5166
+2021,Large Language Models (LLM),6394
+2022,Large Language Models (LLM),8009
+2023,Large Language Models (LLM),30993
+2024,Large Language Models (LLM),72953
+2025,Large Language Models (LLM),79145
+2010,Vision-Language Models (VLM),1598
+2011,Vision-Language Models (VLM),1766
+2012,Vision-Language Models (VLM),1971
+2013,Vision-Language Models (VLM),2087
+2014,Vision-Language Models (VLM),2167
+2015,Vision-Language Models (VLM),2219
+2016,Vision-Language Models (VLM),2553
+2017,Vision-Language Models (VLM),2995
+2018,Vision-Language Models (VLM),3370
+2019,Vision-Language Models (VLM),4071
+2020,Vision-Language Models (VLM),4924
+2021,Vision-Language Models (VLM),5925
+2022,Vision-Language Models (VLM),7537
+2023,Vision-Language Models (VLM),12492
+2024,Vision-Language Models (VLM),16888
+2025,Vision-Language Models (VLM),16410
+2010,Video LLM,447
+2011,Video LLM,535
+2012,Video LLM,591
+2013,Video LLM,732
+2014,Video LLM,696
+2015,Video LLM,855
+2016,Video LLM,848
+2017,Video LLM,941
+2018,Video LLM,1159
+2019,Video LLM,1495
+2020,Video LLM,1857
+2021,Video LLM,2400
+2022,Video LLM,2843
+2023,Video LLM,4896
+2024,Video LLM,6462
+2025,Video LLM,5382
+2010,Retrieval-Augmented Generation (RAG),530
+2011,Retrieval-Augmented Generation (RAG),557
+2012,Retrieval-Augmented Generation (RAG),612
+2013,Retrieval-Augmented Generation (RAG),648
+2014,Retrieval-Augmented Generation (RAG),558
+2015,Retrieval-Augmented Generation (RAG),619
+2016,Retrieval-Augmented Generation (RAG),650
+2017,Retrieval-Augmented Generation (RAG),551
+2018,Retrieval-Augmented Generation (RAG),535
+2019,Retrieval-Augmented Generation (RAG),584
+2020,Retrieval-Augmented Generation (RAG),660
+2021,Retrieval-Augmented Generation (RAG),594
+2022,Retrieval-Augmented Generation (RAG),666
+2023,Retrieval-Augmented Generation (RAG),1092
+2024,Retrieval-Augmented Generation (RAG),4904
+2025,Retrieval-Augmented Generation (RAG),7453
+2010,Graph Neural Networks (GNN),205
+2011,Graph Neural Networks (GNN),272
+2012,Graph Neural Networks (GNN),292
+2013,Graph Neural Networks (GNN),340
+2014,Graph Neural Networks (GNN),382
+2015,Graph Neural Networks (GNN),411
+2016,Graph Neural Networks (GNN),604
+2017,Graph Neural Networks (GNN),877
+2018,Graph Neural Networks (GNN),1507
+2019,Graph Neural Networks (GNN),2979
+2020,Graph Neural Networks (GNN),5657
+2021,Graph Neural Networks (GNN),8983
+2022,Graph Neural Networks (GNN),12345
+2023,Graph Neural Networks (GNN),16541
+2024,Graph Neural Networks (GNN),16472
+2025,Graph Neural Networks (GNN),13319
+2010,Graph Representation Learning,126
+2011,Graph Representation Learning,139
+2012,Graph Representation Learning,162
+2013,Graph Representation Learning,190
+2014,Graph Representation Learning,221
+2015,Graph Representation Learning,283
+2016,Graph Representation Learning,280
+2017,Graph Representation Learning,376
+2018,Graph Representation Learning,707
+2019,Graph Representation Learning,1068
+2020,Graph Representation Learning,1696
+2021,Graph Representation Learning,2396
+2022,Graph Representation Learning,3044
+2023,Graph Representation Learning,3888
+2024,Graph Representation Learning,3142
+2025,Graph Representation Learning,2032
+2010,Causal Machine Learning,218
+2011,Causal Machine Learning,222
+2012,Causal Machine Learning,241
+2013,Causal Machine Learning,286
+2014,Causal Machine Learning,302
+2015,Causal Machine Learning,293
+2016,Causal Machine Learning,386
+2017,Causal Machine Learning,407
+2018,Causal Machine Learning,512
+2019,Causal Machine Learning,753
+2020,Causal Machine Learning,1136
+2021,Causal Machine Learning,1312
+2022,Causal Machine Learning,1460
+2023,Causal Machine Learning,1816
+2024,Causal Machine Learning,1788
+2025,Causal Machine Learning,1853
+2010,Causal Inference,612
+2011,Causal Inference,789
+2012,Causal Inference,833
+2013,Causal Inference,905
+2014,Causal Inference,974
+2015,Causal Inference,1132
+2016,Causal Inference,1168
+2017,Causal Inference,1383
+2018,Causal Inference,1600
+2019,Causal Inference,1831
+2020,Causal Inference,2357
+2021,Causal Inference,2692
+2022,Causal Inference,2726
+2023,Causal Inference,3320
+2024,Causal Inference,3348
+2025,Causal Inference,3755
+2010,Reinforcement Learning,1069804
+2011,Reinforcement Learning,1161140
+2012,Reinforcement Learning,1184291
+2013,Reinforcement Learning,1236682
+2014,Reinforcement Learning,1261549
+2015,Reinforcement Learning,1272677
+2016,Reinforcement Learning,1300915
+2017,Reinforcement Learning,1305595
+2018,Reinforcement Learning,1334546
+2019,Reinforcement Learning,1397170
+2020,Reinforcement Learning,1464134
+2021,Reinforcement Learning,1533839
+2022,Reinforcement Learning,1403075
+2023,Reinforcement Learning,1496036
+2024,Reinforcement Learning,1441414
+2025,Reinforcement Learning,928272
+2010,Deep Reinforcement Learning,27
+2011,Deep Reinforcement Learning,33
+2012,Deep Reinforcement Learning,23
+2013,Deep Reinforcement Learning,30
+2014,Deep Reinforcement Learning,46
+2015,Deep Reinforcement Learning,104
+2016,Deep Reinforcement Learning,290
+2017,Deep Reinforcement Learning,812
+2018,Deep Reinforcement Learning,1927
+2019,Deep Reinforcement Learning,3425
+2020,Deep Reinforcement Learning,4974
+2021,Deep Reinforcement Learning,6640
+2022,Deep Reinforcement Learning,7922
+2023,Deep Reinforcement Learning,9972
+2024,Deep Reinforcement Learning,9431
+2025,Deep Reinforcement Learning,8146
+2010,Prompt Engineering,212
+2011,Prompt Engineering,202
+2012,Prompt Engineering,228
+2013,Prompt Engineering,228
+2014,Prompt Engineering,245
+2015,Prompt Engineering,333
+2016,Prompt Engineering,323
+2017,Prompt Engineering,313
+2018,Prompt Engineering,399
+2019,Prompt Engineering,381
+2020,Prompt Engineering,850
+2021,Prompt Engineering,457
+2022,Prompt Engineering,571
+2023,Prompt Engineering,1481
+2024,Prompt Engineering,2925
+2025,Prompt Engineering,2772
+2010,Instruction Tuning,88
+2011,Instruction Tuning,105
+2012,Instruction Tuning,136
+2013,Instruction Tuning,145
+2014,Instruction Tuning,167
+2015,Instruction Tuning,207
+2016,Instruction Tuning,218
+2017,Instruction Tuning,157
+2018,Instruction Tuning,189
+2019,Instruction Tuning,205
+2020,Instruction Tuning,230
+2021,Instruction Tuning,234
+2022,Instruction Tuning,376
+2023,Instruction Tuning,1749
+2024,Instruction Tuning,3356
+2025,Instruction Tuning,2157
+2010,AI Alignment,16
+2011,AI Alignment,16
+2012,AI Alignment,23
+2013,AI Alignment,16
+2014,AI Alignment,14
+2015,AI Alignment,30
+2016,AI Alignment,26
+2017,AI Alignment,42
+2018,AI Alignment,64
+2019,AI Alignment,86
+2020,AI Alignment,146
+2021,AI Alignment,197
+2022,AI Alignment,313
+2023,AI Alignment,727
+2024,AI Alignment,1572
+2025,AI Alignment,3619
+2010,RLHF,31
+2011,RLHF,15
+2012,RLHF,16
+2013,RLHF,19
+2014,RLHF,36
+2015,RLHF,32
+2016,RLHF,43
+2017,RLHF,63
+2018,RLHF,81
+2019,RLHF,74
+2020,RLHF,100
+2021,RLHF,121
+2022,RLHF,128
+2023,RLHF,538
+2024,RLHF,1092
+2025,RLHF,793
+2010,Multimodal Learning,2978
+2011,Multimodal Learning,3240
+2012,Multimodal Learning,3431
+2013,Multimodal Learning,3780
+2014,Multimodal Learning,4264
+2015,Multimodal Learning,4584
+2016,Multimodal Learning,5033
+2017,Multimodal Learning,5598
+2018,Multimodal Learning,6520
+2019,Multimodal Learning,7844
+2020,Multimodal Learning,9631
+2021,Multimodal Learning,11548
+2022,Multimodal Learning,14055
+2023,Multimodal Learning,18797
+2024,Multimodal Learning,20721
+2025,Multimodal Learning,22279
+2010,Few-shot Learning,418
+2011,Few-shot Learning,477
+2012,Few-shot Learning,477
+2013,Few-shot Learning,500
+2014,Few-shot Learning,548
+2015,Few-shot Learning,532
+2016,Few-shot Learning,559
+2017,Few-shot Learning,710
+2018,Few-shot Learning,1050
+2019,Few-shot Learning,1842
+2020,Few-shot Learning,3156
+2021,Few-shot Learning,5326
+2022,Few-shot Learning,7144
+2023,Few-shot Learning,9939
+2024,Few-shot Learning,10038
+2025,Few-shot Learning,7592
+2010,Self-supervised Learning,1904
+2011,Self-supervised Learning,1898
+2012,Self-supervised Learning,2207
+2013,Self-supervised Learning,2316
+2014,Self-supervised Learning,2591
+2015,Self-supervised Learning,2595
+2016,Self-supervised Learning,2649
+2017,Self-supervised Learning,2923
+2018,Self-supervised Learning,3856
+2019,Self-supervised Learning,5277
+2020,Self-supervised Learning,8348
+2021,Self-supervised Learning,12408
+2022,Self-supervised Learning,15573
+2023,Self-supervised Learning,19995
+2024,Self-supervised Learning,17866
+2025,Self-supervised Learning,12624
+2010,Contrastive Learning,2788
+2011,Contrastive Learning,2820
+2012,Contrastive Learning,3110
+2013,Contrastive Learning,3485
+2014,Contrastive Learning,3639
+2015,Contrastive Learning,4110
+2016,Contrastive Learning,4328
+2017,Contrastive Learning,4634
+2018,Contrastive Learning,5601
+2019,Contrastive Learning,6656
+2020,Contrastive Learning,8941
+2021,Contrastive Learning,11612
+2022,Contrastive Learning,14490
+2023,Contrastive Learning,19787
+2024,Contrastive Learning,19200
+2025,Contrastive Learning,15473
+2010,Federated Learning,27
+2011,Federated Learning,37
+2012,Federated Learning,35
+2013,Federated Learning,43
+2014,Federated Learning,35
+2015,Federated Learning,42
+2016,Federated Learning,42
+2017,Federated Learning,55
+2018,Federated Learning,122
+2019,Federated Learning,446
+2020,Federated Learning,1635
+2021,Federated Learning,3493
+2022,Federated Learning,5319
+2023,Federated Learning,8226
+2024,Federated Learning,10409
+2025,Federated Learning,9986
+2010,Differential Privacy in ML,128
+2011,Differential Privacy in ML,135
+2012,Differential Privacy in ML,137
+2013,Differential Privacy in ML,158
+2014,Differential Privacy in ML,175
+2015,Differential Privacy in ML,162
+2016,Differential Privacy in ML,181
+2017,Differential Privacy in ML,212
+2018,Differential Privacy in ML,257
+2019,Differential Privacy in ML,327
+2020,Differential Privacy in ML,446
+2021,Differential Privacy in ML,565
+2022,Differential Privacy in ML,644
+2023,Differential Privacy in ML,750
+2024,Differential Privacy in ML,711
+2025,Differential Privacy in ML,489
+2010,Knowledge Graphs,2424
+2011,Knowledge Graphs,2626
+2012,Knowledge Graphs,3190
+2013,Knowledge Graphs,3292
+2014,Knowledge Graphs,3828
+2015,Knowledge Graphs,4082
+2016,Knowledge Graphs,4324
+2017,Knowledge Graphs,5280
+2018,Knowledge Graphs,6516
+2019,Knowledge Graphs,8668
+2020,Knowledge Graphs,11832
+2021,Knowledge Graphs,14850
+2022,Knowledge Graphs,16786
+2023,Knowledge Graphs,21220
+2024,Knowledge Graphs,19194
+2025,Knowledge Graphs,14962
+2010,Graph Machine Learning,224
+2011,Graph Machine Learning,277
+2012,Graph Machine Learning,341
+2013,Graph Machine Learning,386
+2014,Graph Machine Learning,434
+2015,Graph Machine Learning,511
+2016,Graph Machine Learning,574
+2017,Graph Machine Learning,770
+2018,Graph Machine Learning,1176
+2019,Graph Machine Learning,1568
+2020,Graph Machine Learning,2257
+2021,Graph Machine Learning,2953
+2022,Graph Machine Learning,3439
+2023,Graph Machine Learning,4270
+2024,Graph Machine Learning,3715
+2025,Graph Machine Learning,2996
+2010,Automatic Speech Recognition,1817
+2011,Automatic Speech Recognition,1966
+2012,Automatic Speech Recognition,2015
+2013,Automatic Speech Recognition,2149
+2014,Automatic Speech Recognition,2348
+2015,Automatic Speech Recognition,2387
+2016,Automatic Speech Recognition,2321
+2017,Automatic Speech Recognition,2492
+2018,Automatic Speech Recognition,2893
+2019,Automatic Speech Recognition,3214
+2020,Automatic Speech Recognition,3890
+2021,Automatic Speech Recognition,4568
+2022,Automatic Speech Recognition,5090
+2023,Automatic Speech Recognition,5531
+2024,Automatic Speech Recognition,4655
+2025,Automatic Speech Recognition,3270
+2010,Machine Translation,1906
+2011,Machine Translation,2185
+2012,Machine Translation,2250
+2013,Machine Translation,2208
+2014,Machine Translation,2481
+2015,Machine Translation,2532
+2016,Machine Translation,3108
+2017,Machine Translation,3714
+2018,Machine Translation,5399
+2019,Machine Translation,6233
+2020,Machine Translation,7156
+2021,Machine Translation,7367
+2022,Machine Translation,6995
+2023,Machine Translation,8219
+2024,Machine Translation,6791
+2025,Machine Translation,5478
+2010,Question Answering,26827
+2011,Question Answering,29346
+2012,Question Answering,32962
+2013,Question Answering,35920
+2014,Question Answering,37623
+2015,Question Answering,40425
+2016,Question Answering,43010
+2017,Question Answering,43698
+2018,Question Answering,46543
+2019,Question Answering,51165
+2020,Question Answering,56372
+2021,Question Answering,54666
+2022,Question Answering,65967
+2023,Question Answering,54446
+2024,Question Answering,44113
+2025,Question Answering,26406
+2010,Information Retrieval,38933
+2011,Information Retrieval,42365
+2012,Information Retrieval,43298
+2013,Information Retrieval,44084
+2014,Information Retrieval,44455
+2015,Information Retrieval,44551
+2016,Information Retrieval,42202
+2017,Information Retrieval,43069
+2018,Information Retrieval,44503
+2019,Information Retrieval,46280
+2020,Information Retrieval,48477
+2021,Information Retrieval,46913
+2022,Information Retrieval,46509
+2023,Information Retrieval,49170
+2024,Information Retrieval,40905
+2025,Information Retrieval,26979
+2010,Named Entity Recognition,1051
+2011,Named Entity Recognition,1106
+2012,Named Entity Recognition,1215
+2013,Named Entity Recognition,1360
+2014,Named Entity Recognition,1416
+2015,Named Entity Recognition,1551
+2016,Named Entity Recognition,1538
+2017,Named Entity Recognition,1680
+2018,Named Entity Recognition,1916
+2019,Named Entity Recognition,2482
+2020,Named Entity Recognition,2854
+2021,Named Entity Recognition,3088
+2022,Named Entity Recognition,3405
+2023,Named Entity Recognition,4015
+2024,Named Entity Recognition,3086
+2025,Named Entity Recognition,2108
+2010,Summarization,47843
+2011,Summarization,53624
+2012,Summarization,54195
+2013,Summarization,57077
+2014,Summarization,57896
+2015,Summarization,55123
+2016,Summarization,53880
+2017,Summarization,56003
+2018,Summarization,61483
+2019,Summarization,67389
+2020,Summarization,84055
+2021,Summarization,93434
+2022,Summarization,96610
+2023,Summarization,101356
+2024,Summarization,79870
+2025,Summarization,51903
+2010,Data Augmentation,815
+2011,Data Augmentation,868
+2012,Data Augmentation,927
+2013,Data Augmentation,1053
+2014,Data Augmentation,1039
+2015,Data Augmentation,1172
+2016,Data Augmentation,1307
+2017,Data Augmentation,1693
+2018,Data Augmentation,2504
+2019,Data Augmentation,3922
+2020,Data Augmentation,5514
+2021,Data Augmentation,7730
+2022,Data Augmentation,9361
+2023,Data Augmentation,12195
+2024,Data Augmentation,11348
+2025,Data Augmentation,8723
+2010,Domain Adaptation,1114
+2011,Domain Adaptation,1264
+2012,Domain Adaptation,1333
+2013,Domain Adaptation,1476
+2014,Domain Adaptation,1619
+2015,Domain Adaptation,1684
+2016,Domain Adaptation,1809
+2017,Domain Adaptation,1962
+2018,Domain Adaptation,2408
+2019,Domain Adaptation,3278
+2020,Domain Adaptation,4149
+2021,Domain Adaptation,5045
+2022,Domain Adaptation,5433
+2023,Domain Adaptation,6707
+2024,Domain Adaptation,6678
+2025,Domain Adaptation,6204
+2010,Computer Vision,2759380
+2011,Computer Vision,3013595
+2012,Computer Vision,3065019
+2013,Computer Vision,3187484
+2014,Computer Vision,3349731
+2015,Computer Vision,3479122
+2016,Computer Vision,3491885
+2017,Computer Vision,3291264
+2018,Computer Vision,3335774
+2019,Computer Vision,3503976
+2020,Computer Vision,3870046
+2021,Computer Vision,3448649
+2022,Computer Vision,3667119
+2023,Computer Vision,3683989
+2024,Computer Vision,3244963
+2025,Computer Vision,2073012
+2010,Multimodal (General),4265
+2011,Multimodal (General),4780
+2012,Multimodal (General),4814
+2013,Multimodal (General),5309
+2014,Multimodal (General),5751
+2015,Multimodal (General),6225
+2016,Multimodal (General),6643
+2017,Multimodal (General),7441
+2018,Multimodal (General),8787
+2019,Multimodal (General),10252
+2020,Multimodal (General),12954
+2021,Multimodal (General),14981
+2022,Multimodal (General),18153
+2023,Multimodal (General),25500
+2024,Multimodal (General),28612
+2025,Multimodal (General),31813
