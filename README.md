@@ -1,82 +1,77 @@
-# OpenAlex AI Trend Explorer
+# 📈 OpenAlex AI Trend Explorer (Cloud-Native Edition)
 
-A minimal, beginner-friendly project that fetches AI-related bibliometric data from the OpenAlex API and provides:
-- Python scripts + notebooks for analysis
-- A FastAPI backend
-- A React-based dashboard
+[![GitHub Stars](https://img.shields.io/github/stars/QronG9/ai-research-trend-dashboard?style=social)](https://github.com/QronG9/ai-research-trend-dashboard)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Tech Stack](https://img.shields.io/badge/Frontend-React%2FVite%2FFirebase-blue)](https://vitejs.dev/)
+[![Tech Stack](https://img.shields.io/badge/Backend-CloudFunction%2FGCS%2FPython-green)](https://cloud.google.com/functions)
 
-## Project Overview
-- Fetches counts per year using fast `group_by=publication_year` queries.
-- 30 AI sub-directions defined in `src/config/directions.py`.
-- Caches per-direction results to `cache/`.
-- Outputs a long-format CSV at `output/ai_directions_counts.csv`.
-- Provides line charts and heatmaps via scripts, notebooks, and a web dashboard.
+---
 
-## Installation
-1) Create and activate a virtual environment (Windows example):
+## 🚀 Live Dashboard & Project Overview
 
-```
-python -m venv trend-env
-trend-env\Scripts\activate
-```
+This is a real-time visualization tool that tracks the publication volume trends of over 30 AI research subfields sourced from the **OpenAlex** API (2010–2025).
 
-2) Install dependencies:
+**Live Demo URL (立即访问):** [https://ai-trend-478401.web.app](https://ai-trend-478401.web.app)
 
-```
-pip install -r requirements.txt
-```
+**Key Features:**
+* **Backendless Architecture:** Migrated from FastAPI to Google Cloud Functions (GCP) + Firebase Hosting.
+* **Static Data Hosting:** Frontend fetches data directly from Google Cloud Storage (GCS) for lightning-fast load times.
+* **On-Demand Updates:** Users can trigger data recalculation using the "Refresh" button.
+* **Visualizations:** Provides Trend Line Charts, Rankings, and Heatmaps.
 
-Note: In VS Code, ensure the interpreter is set to `E:\\trend\\trend-env\\Scripts\\python.exe`.
 
-## Usage (Python)
-- Run the full 30-direction pipeline (writes CSV and heatmap):
 
-```
-python run_all_directions.py
-```
+---
 
-- Run the simple NLP trend demo:
+## 🧠 Project Architecture (Monorepo Structure)
 
-```
-python demo_nlp_trend.py
-```
+This repository follows a Monorepo structure, containing distinct components for the compute pipeline and the frontend application.
 
-- Open the notebook and run the cells:
+### 1. Compute Pipeline (Cloud Function)
 
-```
-jupyter notebook notebooks/nlp_trend_demo.ipynb
-```
+| Folder | Description | Deployed To | Role |
+| :--- | :--- | :--- | :--- |
+| `cloud-function/` | Contains all Python source (`main.py`, `openalex_client.py`). | **Google Cloud Functions** | Fetches data from OpenAlex, aggregates, and writes to GCS. |
+| `cache/` | Stores the final generated JSON files (`{slug}_2010_2025.json`). | **Google Cloud Storage (GCS)** | Public data source for the frontend. |
 
-### Web Dashboard
-This repo includes a small FastAPI backend and a React dashboard.
+### 2. Frontend Application
 
-Backend (FastAPI):
+| Folder | Description | Deployed To | Role |
+| :--- | :--- | :--- | :--- |
+| `frontend-vercel/` | The core React/Vite source code. | **Firebase Hosting** | Reads JSON from GCS and provides the user interface. |
 
-```
-trend-env\Scripts\activate
-uvicorn src.frontend_api.server:app --reload
-```
+---
 
-Frontend (React + Vite):
+## 🛠️ Installation & Deployment
 
-```
-cd frontend
-npm install
-npm run dev
-```
+This project requires Python (for the backend code) and Node.js (for the frontend).
 
-Open http://localhost:5173
+### Local Setup (Python & Backend Code)
 
-Dashboard Panels:
-- Trend line chart: select a direction and view counts (2010–2025)
-- Rankings: latest year’s top directions as a bar chart
-- Heatmap: directions × years
+1.  **Environment:** Create a virtual environment and activate it.
+    ```bash
+    python -m venv trend-env
+    source trend-env/bin/activate  # Or trend-env\Scripts\activate on Windows
+    ```
+2.  **Dependencies:** Install backend analysis dependencies.
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Refresh Button:
-- Triggers POST /api/refresh to run `run_all_directions.py`, recomputing caches and CSV.
-- The dashboard auto-updates after completion.
+### Production Deployment (GCP & Firebase)
 
-## Notes
-- OpenAlex is free and does not require an API key.
-- Counts are approximate and depend on filters (concept id preferred; keyword fallback may double-count overlaps).
-- The demo uses small ranges in some scripts for quick runs.
+The full deployment involves deploying the Cloud Function (Python) and the Frontend (React).
+
+1.  **Cloud Function Deploy:** (Refer to `README_DEPLOY.md` for specific commands.)
+2.  **Frontend Deploy:** Built from the `frontend-vercel/` directory and deployed to Firebase Hosting.
+
+---
+
+## 💡 Usage (Python Scripts)
+
+The repository still contains the original scripts and notebooks for local data processing:
+
+* **Full Pipeline:** `python run_all_directions.py` (Writes all caches and CSV output).
+* **Demo Notebook:** `jupyter notebook notebooks/nlp_trend_demo.ipynb`
+
+***
